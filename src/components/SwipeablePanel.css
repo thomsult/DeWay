@@ -1,0 +1,103 @@
+:root {
+  --rsbs-backdrop-bg: rgba(0, 0, 0, 0.6);
+  --rsbs-bg: var(--light);
+  --rsbs-handle-bg: hsla(0, 0%, 0%, 0.14);
+  --rsbs-max-w: auto;
+  --rsbs-ml: env(safe-area-inset-left);
+  --rsbs-mr: env(safe-area-inset-right);
+  --rsbs-overlay-rounded: 16px;
+  --rsbs-overlay-h: 100vh;
+}
+
+div[role="dialog"] {
+  z-index: 1000;
+}
+
+[data-rsbs-overlay] {
+  border-top-left-radius: var(--rsbs-overlay-rounded);
+  border-top-right-radius: var(--rsbs-overlay-rounded);
+  display: flex;
+  background: var(--rsbs-bg);
+  flex-direction: column;
+  height: var(--rsbs-overlay-h);
+  transform: translate3d(0, var(--rsbs-overlay-translate-y), 0);
+  will-change: height;
+  position: relative;
+}
+
+[data-rsbs-overlay]::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 500px;
+  bottom: -500px;
+  background: var(--rsbs-bg);
+}
+
+[data-rsbs-is-blocking="false"] [data-rsbs-overlay] {
+  box-shadow: 0 0 20px rgba(29, 29, 29, 0.2);
+}
+
+[data-rsbs-overlay],
+[data-rsbs-backdrop],
+[data-rsbs-root]:after {
+  z-index: 3;
+  overscroll-behavior: none;
+  touch-action: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+[data-rsbs-header] {
+  cursor: row-resize;
+  padding-bottom: 1.5em;
+}
+
+.BottomSheetBouton {
+  border: none;
+  height: 2em;
+  width: 10em;
+  background: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.BottomSheetBouton::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: var(--light-grey);
+  height: 0.5em;
+  width: 10em;
+  border-radius: 5px;
+  top: 1em;
+  left: 0;
+  transition: 0.5s ease-in;
+}
+
+.BottomSheetBouton:hover:after {
+  opacity: 0.5;
+}
+
+[data-rsbs-scroll="Open"] {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+[data-rsbs-scroll="Close"] {
+  overflow-x: hidden;
+  padding-right: 1em;
+  overflow-y: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  div[role="dialog"] {
+    display: none;
+  }
+}

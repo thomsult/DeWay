@@ -1,0 +1,74 @@
+.modal {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal__un {
+  width: 200px;
+  height: fit-content;
+  position: relative;
+  border-radius: 1em;
+  box-shadow: 0em 0.2em 0.8em grey;
+  background-color: var(--light);
+}
+
+.modal__cross {
+  width: 100%;
+  height: 10%;
+  position: relative;
+}
+
+.modal__cross button {
+  width: 0.8em;
+  height: 0.8em;
+  cursor: pointer;
+  position: absolute;
+  top: 0.6em;
+  right: 0.8em;
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.modal__cross button img {
+  width: 100%;
+}
+
+.modal__text {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal__text img {
+  height: auto;
+  width: 8em;
+  object-fit: contain;
+  margin-top: 0.8em;
+}
+
+.modal__text p {
+  padding: 0 1em;
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+.modal__text span {
+  color: var(--secondary-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .modal__un {
+    width: 280px;
+  }
+}

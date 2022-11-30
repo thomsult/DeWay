@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47" height="53" fill="none" viewBox="0 0 47 53">
+  <defs>
+    <linearGradient id="b" x1="12.5" x2="12.5" y1="0" y2="39" class="b" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity="0"/>
+      <stop offset="0" stop-color="#5FA6D7"/>
+      <stop offset="1" stop-color="#1B76C8"/>
+    </linearGradient>
+    <filter id="a" width="43.622" height="51.655" x="3.107" y="1.104" class="a" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+      <feGaussianBlur result="effect1_foregroundBlur_31_97" stdDeviation="5"/>
+    </filter>
+  </defs>
+  <g class="Group 44">
+    <g class="Vector" filter="url(#a)">
+      <path fill="#000" fill-opacity=".5" d="M13.742 39.934c2.292-11.737 2.768-20.332 5.026-23.856 3.093-4.827 9.23-6.414 13.707-3.545 4.477 2.869 5.6 9.108 2.506 13.935-2.258 3.524-8.843 6.662-19.573 14.534l-2.301 1.757.635-2.825Z"/>
+    </g>
+    <g class="Vector">
+      <path fill="url(#b)" d="M11.215 38.354C5.5 25.5 0 16.838 0 12 0 5.373 5.596 0 12.5 0S25 5.373 25 12c0 4.838-5 12-11.215 26.354L12.5 41.5l-1.285-3.146Z"/>
+      <path stroke="#fff" stroke-opacity=".2" d="m11.678 38.165-.003-.007-.003-.007C9.73 33.784 7.808 29.89 6.123 26.475a395.79 395.79 0 0 1-2.207-4.52c-1.043-2.184-1.9-4.103-2.496-5.772C.822 14.51.5 13.124.5 12 .5 5.668 5.853.5 12.5.5s12 5.168 12 11.5c0 1.127-.292 2.42-.849 3.972-.556 1.55-1.366 3.326-2.378 5.419-.49 1.014-1.028 2.1-1.605 3.267-1.8 3.637-3.985 8.054-6.342 13.498l-.004.01-.822 2.012-.822-2.013Z"/>
+    </g>
+    <g class="Group 33">
+      <circle cx="12.558" cy="12.558" r="5.533" fill="#fff" stroke="#fff" stroke-opacity=".26" class="Ellipse 16" transform="rotate(-150 12.558 12.558)"/>
+    </g>
+  </g>
+</svg>

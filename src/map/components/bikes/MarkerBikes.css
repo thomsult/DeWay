@@ -1,0 +1,25 @@
+.popupBike {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.popupBike h4 {
+  margin: 0;
+  color: #004aad;
+}
+
+.popupBike > div > div {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.popupBike > div > div img {
+  margin-right: 0.25rem;
+}
+
+.popupBike-text {
+  display: flex;
+}

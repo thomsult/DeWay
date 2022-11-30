@@ -1,0 +1,18 @@
+.bikeButton {
+  pointer-events: auto;
+  outline: none;
+  display: flex;
+  border-radius: 5px;
+  padding: 0.2em;
+  border: 2px solid rgb(178, 178, 178);
+  background-color: white;
+  margin-top: 12vh;
+  margin-left: 3vh;
+}
+
+@media screen and (min-width: 1024px) {
+  .bikeButton {
+    margin-top: 20vh;
+    margin-left: 30px;
+  }
+}
