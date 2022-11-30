@@ -152,11 +152,7 @@ function ShowBikes() {
                       width="15px"
                     />
                   ) : (
-                    <img
-                      src="./parking.png"
-                      alt="logo parking"
-                      width="15px"
-                    />
+                    <img src="./parking.png" alt="logo parking" width="15px" />
                   )}
                   <p>
                     {cluster.properties.standAvailable > 0
